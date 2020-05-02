@@ -14,6 +14,10 @@ const authRoutes = require('./routes/auth')
 const userRoutes = require('./routes/user')
 const categoryRoutes = require('./routes/category')
 const productRoute = require('./routes/product')
+const braintreeRoutes = require('./routes/braintree')
+
+
+
 
 
 // our app
@@ -42,6 +46,7 @@ app.use("/api",authRoutes)
 app.use("/api",userRoutes)
 app.use("/api",categoryRoutes)
 app.use("/api",productRoute)
+app.use('/api',braintreeRoutes)
 
 
 // here '/' tell us that we are getting to home page of the applicstion or can say default for home page is '/'
